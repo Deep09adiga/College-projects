@@ -1,0 +1,32 @@
+elseif($ch1=='checked' && $ch2=='checked' && $ch3=='checked' && $ch4=='checked')
+	$result = mysqli_query($con,"SELECT * FROM system");
+elseif($ch1=='checked' && $ch2=='unchecked' && $ch3=='unchecked' && $ch4=='unchecked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='windows'");
+elseif($ch1=='unchecked' && $ch2=='checked' && $ch3=='unchecked' && $ch4=='unchecked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='dos'");
+elseif($ch1=='unchecked' && $ch2=='unchecked' && $ch3=='checked' && $ch4=='unchecked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='linux'");
+elseif($ch1=='unchecked' && $ch2=='unchecked' && $ch3=='unchecked' && $ch4=='checked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='mac'");
+elseif($ch1=='checked' && $ch2=='checked' && $ch3=='unchecked' && $ch4=='unchecked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='windows' or os='dos'");
+elseif($ch1=='checked' && $ch2=='unchecked' && $ch3=='checked' && $ch4=='unchecked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='windows' or os='linux'");
+elseif($ch1=='checked' && $ch2=='unchecked' && $ch3=='unchecked' && $ch4=='checked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='windows' or os='mac'");
+elseif($ch1=='unchecked' && $ch2=='checked' && $ch3=='checked' && $ch4=='unchecked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='dos' or os='linux'");
+elseif($ch1=='unchecked' && $ch2=='checked' && $ch3=='unchecked' && $ch4=='checked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='dos' or os='mac'");
+elseif($ch1=='unchecked' && $ch2=='unchecked' && $ch3=='checked' && $ch4=='checked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='linux' or os='mac'");
+elseif($ch1=='checked' && $ch2=='checked' && $ch3=='checked' && $ch4=='unchecked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='windows' or os='dos' or os='linux");
+elseif($ch1=='checked' && $ch2=='checked' && $ch3=='unchecked' && $ch4=='checked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='windows' or os='dos' or os='mac");
+elseif($ch1=='checked' && $ch2=='unchecked' && $ch3=='checked' && $ch4=='checked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='windows' or os='mac' or os='linux");
+elseif($ch1=='unchecked' && $ch2=='checked' && $ch3=='checked' && $ch4=='checked')
+	$result = mysqli_query($con,"SELECT * FROM system where os='dos' or os='mac' or os='linux");
+else
+	$result = mysqli_query($con,"SELECT * FROM system");

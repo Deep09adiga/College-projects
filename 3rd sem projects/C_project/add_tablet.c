@@ -1,0 +1,47 @@
+struct TABLET_features{
+    int price;
+    char os[100];
+    char display_type[100];
+    char display_size[10];
+    char type_of_moble[100];
+    char camera[100];
+    char ram[10];
+	char internal_memory[10];
+	char expandable[10];
+	char network[5];
+	char supported_network[100];
+	char sensors[100];
+	char waranty[10];
+	char accessories[100];
+}feature;
+add_feature(){
+        printf("Enter the features\n");
+        printf("ENter the price\n");
+        scanf("%d",&feature.price);
+        printf("Enter the operating system\n");
+        scanf("%s",feature.os);
+        printf("Enter the display type\n");
+        scanf("%s",feature.display_type);
+        printf("Enter the display size\n");
+        scanf("%s",feature.display_size);
+        printf("Enter the type of TABLET\n");
+        scanf("%s",feature.type_of_moble);
+        printf("Enter the camera\n");
+        scanf("%s",feature.camera);
+        printf("Enter the ram size\n");
+        scanf("%s",feature.ram);
+        printf("Enter the Internal memory\n");
+        scanf("%s",feature.internal_memory);
+        printf("Enter the expandable memory\n");
+        scanf("%s",feature.expandable);
+        printf("Enter the etwork type\n");
+        scanf("%s",feature.network);
+        printf("Enter the Supported networked\n");
+        scanf("%s",feature.supported_network);
+        printf("Enter the sensors\n");
+        scanf("%s",feature.sensors);
+        printf("Enter the warranty\n");
+        scanf("%s",feature.waranty);
+        printf("Enter the Accessories\n");
+        scanf("%s",feature.accessories);
+}

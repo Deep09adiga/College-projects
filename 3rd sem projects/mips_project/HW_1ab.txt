@@ -1,0 +1,236 @@
+.data
+_bad_a0: .word 0x43434143 0x41414143 0x41434343 0x41434141 0x41434143
+_bad_v0: .word          0          0          1          1          2
+_face_m1: .word 0x32433943 0x39434A43 0x4A434143
+_face_eq: .word 0x35433543 0x4A434A43 0x41434143
+_face_p1: .word 0x39433243 0x4A433943 0x41434A43
+_suit_m1: .word 0x32433244 0x4A434A44 0x41434144
+_suit_eq: .word 0x32433243 0x4A434A43 0x41434143
+_suit_p1: .word 0x32443243 0x4A444A43 0x41444143
+
+.text
+main:
+  addi   $sp, $sp, -8
+  sw     $ra, 0($sp)
+  sw     $s0, 4($sp)
+
+  li     $s0, 1
+  la     $a0, _bad_a0
+  lw     $a0, 0($a0)
+  li     $a1, 0
+  jal    student_code
+  beq    $v0, 0, _test2
+  jal    _error
+
+_test2:
+  li     $s0, 2
+  la     $a0, _bad_a0
+  lw     $a0, 4($a0)
+  li     $a1, 0
+  jal    student_code
+  beq    $v0, 0, _test3
+  jal    _error
+
+_test3:
+  li     $s0, 3
+  la     $a0, _bad_a0
+  lw     $a0, 8($a0)
+  li     $a1, 0
+  jal    student_code
+  beq    $v0, 1, _test4
+  jal    _error
+
+_test4:
+  li     $s0, 4
+  la     $a0, _bad_a0
+  lw     $a0, 12($a0)
+  li     $a1, 0
+  jal    student_code
+  beq    $v0, 1, _test5
+  jal    _error
+
+_test5:
+  li     $s0, 5
+  la     $a0, _bad_a0
+  lw     $a0, 16($a0)
+  li     $a1, 0
+  jal    student_code
+  beq    $v0, 2, _test6
+  jal    _error
+
+_test6:
+  li     $s0, 6
+  la     $a0, _face_m1
+  lw     $a0, 0($a0)
+  li     $a1, 1
+  jal    student_code
+  beq    $v0, -1, _test7
+  jal    _error
+
+_test7:
+  li     $s0, 7
+  la     $a0, _face_m1
+  lw     $a0, 4($a0)
+  li     $a1, 1
+  jal    student_code
+  beq    $v0, -1, _test8
+  jal    _error
+
+_test8:
+  li     $s0, 8
+  la     $a0, _face_m1
+  lw     $a0, 8($a0)
+  li     $a1, 1
+  jal    student_code
+  beq    $v0, -1, _test9
+  jal    _error
+
+_test9:
+  li     $s0, 9
+  la     $a0, _face_eq
+  lw     $a0, 0($a0)
+  li     $a1, 1
+  jal    student_code
+  beq    $v0, 0, _test10
+  jal    _error
+
+_test10:
+  li     $s0, 10
+  la     $a0, _face_eq
+  lw     $a0, 4($a0)
+  li     $a1, 1
+  jal    student_code
+  beq    $v0, 0, _test11
+  jal    _error
+
+_test11:
+  li     $s0, 11
+  la     $a0, _face_eq
+  lw     $a0, 8($a0)
+  li     $a1, 1
+  jal    student_code
+  beq    $v0, 0, _test12
+  jal    _error
+
+_test12:
+  li     $s0, 12
+  la     $a0, _face_p1
+  lw     $a0, 0($a0)
+  li     $a1, 1
+  jal    student_code
+  beq    $v0, 1, _test13
+  jal    _error
+
+_test13:
+  li     $s0, 13
+  la     $a0, _face_p1
+  lw     $a0, 4($a0)
+  li     $a1, 1
+  jal    student_code
+  beq    $v0, 1, _test14
+  jal    _error
+
+_test14:
+  li     $s0, 14
+  la     $a0, _face_p1
+  lw     $a0, 8($a0)
+  li     $a1, 1
+  jal    student_code
+  beq    $v0, 1, _test15
+  jal    _error
+
+_test15:
+  li     $s0, 15
+  la     $a0, _suit_m1
+  lw     $a0, 0($a0)
+  li     $a1, 2
+  jal    student_code
+  beq    $v0, -1, _test16
+  jal    _error
+
+_test16:
+  li     $s0, 16
+  la     $a0, _suit_m1
+  lw     $a0, 4($a0)
+  li     $a1, 2
+  jal    student_code
+  beq    $v0, -1, _test17
+  jal    _error
+
+_test17:
+  li     $s0, 17
+  la     $a0, _suit_m1
+  lw     $a0, 8($a0)
+  li     $a1, 2
+  jal    student_code
+  beq    $v0, -1, _test18
+  jal    _error
+
+_test18:
+  li     $s0, 18
+  la     $a0, _suit_eq
+  lw     $a0, 0($a0)
+  li     $a1, 2
+  jal    student_code
+  beq    $v0, 0, _test19
+  jal    _error
+
+_test19:
+  li     $s0, 19
+  la     $a0, _suit_eq
+  lw     $a0, 4($a0)
+  li     $a1, 2
+  jal    student_code
+  beq    $v0, 0, _test20
+  jal    _error
+
+_test20:
+  li     $s0, 20
+  la     $a0, _suit_eq
+  lw     $a0, 8($a0)
+  li     $a1, 2
+  jal    student_code
+  beq    $v0, 0, _test21
+  jal    _error
+
+_test21:
+  li     $s0, 21
+  la     $a0, _suit_p1
+  lw     $a0, 0($a0)
+  li     $a1, 2
+  jal    student_code
+  beq    $v0, 1, _test22
+  jal    _error
+
+_test22:
+  li     $s0, 22
+  la     $a0, _suit_p1
+  lw     $a0, 4($a0)
+  li     $a1, 2
+  jal    student_code
+  beq    $v0, 1, _test23
+  jal    _error
+
+_test23:
+  li     $s0, 23
+  la     $a0, _suit_p1
+  lw     $a0, 8($a0)
+  li     $a1, 2
+  jal    student_code
+  beq    $v0, 1, _all_done
+  jal    _error
+
+_all_done:
+  lw     $ra, 0($sp)
+  lw     $s0, 4($sp)
+  addi   $sp, $sp, 8
+  jr     $ra
+_error:
+  move   $a0, $s0
+  li     $v0, 1
+  syscall
+  li     $a0, 10
+  li     $v0, 11
+  syscall
+  jr     $ra
+student_code:

@@ -1,0 +1,63 @@
+h1{
+	
+	font-weight: italic;
+	font-size: 40px;
+	
+	
+	color:#0000FF;
+}
+
+body
+{
+  background: url("http://127.0.0.1/body.jpg");
+
+}
+
+#menu {
+    width: 1200px;
+    height: 45px;
+    margin-top: 50px;
+    margin-left: 25px;
+    background-position: center;
+    font-size: 22px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #;
+    background: url("http://127.0.0.1/lower.png");
+    border-radius: 10px;
+    
+       
+}
+
+#menu ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+
+#menu li { 
+display: inline; 
+padding: 20px; 
+}
+
+
+#menu a {
+    text-decoration: none;
+    color: #E5E4E2;
+    padding: 8px 8px 8px 8px;
+}
+#menu a:hover {
+    color: #F90;
+    background-color:#ffffff;
+}
+
+
+
+
+
+
+
+
+

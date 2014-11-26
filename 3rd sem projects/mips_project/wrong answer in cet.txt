@@ -1,0 +1,25 @@
+subject: Computer science
+version code : A2
+
+question no: 86
+This question doesn't have the answer in its options
+
+question no: 115
+In this question both option 2 and 3 do the work asked in question, so both are correct.
+
+question no: 125
+This program doesn't execute and gives an error which is not in the options
+
+question no: 140
+In this question answer 1 is correct because in every book and in net its answer is multiple inheritance only
+
+question no: 145
+In this question both duplication and wastage of space take place so answer is option 3
+
+question no:156
+In this question for C comma acts as both separator and delimiter, so both answer are correct.
+
+question no: 173
+In this question the answer is ready. Because after sleep time expires the thread enters to ready state from waiting state
+
+Sir with all respect i request u to check the answers and update the key answers and pls dont give grace marks for the question which have answers because grace marks doesn't make any difference. you can give grace marks to the questions which don't have answer in their options.

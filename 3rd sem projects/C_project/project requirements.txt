@@ -1,0 +1,45 @@
+Home:
+	Products:
+		Mobile
+			Mobile Brands:	
+				Apple
+				BlackBerry
+				Sony	
+				Nokia
+				Samsung
+				Micromax
+		Tablets
+			Tablet brands:	
+				Apple
+				BlackBerry
+				Sony	
+				Nokia
+				Samsung
+				Micromax
+				Bsnl
+				acer
+				asus
+				nexus
+
+		Accessories
+		Cases and covers
+Feature:OS
+	DISPLAY TYPE
+	DISPLAY SIZE
+	TYPE OF MOBILE
+	RAM
+	INTERNAL MEMORY
+	EXPANDABLE
+	NETWORK
+	SUPPORTED NETWORK
+	SENSORS
+	WARRANTY
+	ACCESSORIES
+Offered mobiles:
+Order:	Sign-in:User
+	Sign-up:
+		tax
+		cash discount
+		Gifts
+		Total
+

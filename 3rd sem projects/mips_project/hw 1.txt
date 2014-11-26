@@ -1,0 +1,27 @@
+# HW 1
+# Author: <fill in your name here>
+#
+# Please RENAME this file using your name
+# Example: Viraj Kumar's filename will be: VirajKumar.s
+
+main:
+  # Test input
+  li    $a0, 0x4A444143  # JD, AC
+  li    $a1, 0           # Check if both cards are OK
+
+###### DO NOT DELETE THIS LINE ######
+###### Start of your code HERE ######
+
+
+
+
+
+########## End of your code #########
+###### DO NOT DELETE THIS LINE ######
+
+  # Now print the answer $v0
+  move  $a0, $v0
+  li    $v0, 1
+  syscall
+
+  jr    $ra

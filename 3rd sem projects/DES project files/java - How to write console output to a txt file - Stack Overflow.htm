@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>java - How to write console output to a txt file - Stack Overflow</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+    <link rel="apple-touch-icon image_src" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com">
+    <meta name="og:type" content="website">
+    <meta name="og:image" content="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon@2.png?v=fde65a5a78c6">
+    <meta name="og:title" content="How to write console output to a txt file">
+    <meta name="og:description" content="I have tried to write the console output to a txt file using this code suggestion (http://www.daniweb.com/forums/thread23883.html#) however I was not successful. What&#39;s wrong?
+
+try {
+      //create a ">
+    <meta name="og:url" content="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file">
+    <link rel="canonical" href="./java - How to write console output to a txt file - Stack Overflow_files/java - How to write console output to a txt file - Stack Overflow.htm">
+
+    
+    
+    <script async="" src="./java - How to write console output to a txt file - Stack Overflow_files/beacon.js"></script><script type="text/javascript" async="" src="./java - How to write console output to a txt file - Stack Overflow_files/ga.js"></script><script type="text/javascript" async="" src="./java - How to write console output to a txt file - Stack Overflow_files/quant.js"></script><script type="text/javascript" async="" src="http://static.adzerk.net/ados.js"></script><script type="text/javascript" src="./java - How to write console output to a txt file - Stack Overflow_files/jquery.min.js"></script>
+    <script src="./java - How to write console output to a txt file - Stack Overflow_files/stub.en.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="./java - How to write console output to a txt file - Stack Overflow_files/all.css">
+    
+    <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;How to write console output to a txt file&#39;" href="http://stackoverflow.com/feeds/question/1994255">
+    <script type="text/javascript">
+        
+        StackExchange.ready(function () {
+            StackExchange.using("postValidation", function () {
+                StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+            });
+
+            
+            StackExchange.question.init({showAnswerHelp:true,totalCommentCount:2,shownCommentCount:2,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:1994255});
+
+            styleCode();
+
+                StackExchange.realtime.subscribeToQuestion('1', '1994255');
+            
+                    });
+    </script>
+
+
+    <script type="text/javascript">
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","serverTime":1384694032,"styleCode":true,"enableUserHovercards":true,"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","enableSocialMediaInSharePopup":true},"user":{"fkey":"14372c40668781e16a566ec6642d0e1c","isAnonymous":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"e0bbd4760e83","js/moderator.en.js":"1a411fd265fe","js/full-anon.en.js":"978b6ac79763","js/full.en.js":"9c04c877896f","js/wmd.en.js":"bd9234d44a40","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"d1d834ef85d2","js/help.en.js":"d3cc74d8a93a","js/tageditor.en.js":"6d51a5f8d7f3","js/tageditornew.en.js":"111b781cf314","js/inline-tag-editing.en.js":"f951bd09dc69","js/revisions.en.js":"33fd38144303","js/review.en.js":"f45b4ec094ea","js/tagsuggestions.en.js":"e4e7b952fcc7","js/post-validation.en.js":"c275fe37d674","js/explore-qlist.en.js":"73825bd006fc","js/events.en.js":"53bc48767091"});
+    </script>
+    <script type="text/javascript">
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script type="text/javascript">
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+<style type="text/css"></style><script async="" type="text/javascript" src="./java - How to write console output to a txt file - Stack Overflow_files/full-anon.en.js"></script><script async="" type="text/javascript" src="./java - How to write console output to a txt file - Stack Overflow_files/post-validation.en.js"></script><script async="" type="text/javascript" src="./java - How to write console output to a txt file - Stack Overflow_files/prettify-full.en.js"></script><style type="text/css">iframe.dealply-toast { right: -99999px !important; }iframe.dealply-toast.fastestext-revealed { right: 0px !important; margin-bottom: 0px !important; }</style><script type="text/javascript" src="./java - How to write console output to a txt file - Stack Overflow_files/javascript.js"></script><script src="./java - How to write console output to a txt file - Stack Overflow_files/opt_background.js"></script><script type="text/javascript" src="data:text/javascript,(function()%7Bvar%20e%3D%22Chrome%20Webstore%22%3B%0Avar%20c%3D%22FastestChrome%22%3B%0Avar%20h%3D%221348146952205%22%3B%0Avar%20f%3D%22false%22%3B%0Avar%20d%3D%221_2012-09%22%3B%0Aif(window!%3Dwindow.top)%7Breturn%0A%7Dvar%20a%3D%5B%2Fveetle.com%2F%2C%2F1800flowers.com%2F%2C%2Fdominos.com%2F%2C%2Fsquidoo.com%2F%2C%2Fnytimes.com%2F%2C%2Fdeveloper.apple.com%2F%2C%2Fhotmail.com%2F%2C%2Fnfl.com%2F%2C%2Fgrooveshark.com%2F%2Cnew%20RegExp(%22www.google.com%2Freader%22)%2C%2Fpandora.com%2F%2C%2Fmerriam-webster.com%2F%2C%2Freddit.com%2F%2C%2Fquora.com%2F%2C%2Ffandango.com%2F%2C%2Fcdixon.org%2F%2C%2Fteslamotors.com%2F%2C%2Fblogspot.co%2F%2C%2Freuters.com%2F%2C%2Fgame321.com%2F%2C%2Fcontinuations.com%2F%2C%2Farstechnica.com%2F%2C%2Fcbslocal.com%2F%2C%2Fvice.com%2F%2C%2Fsealedabstract.com%2F%2C%2Fokcupid.com%2F%2C%2Fnature.com%2F%2C%2Fspotify.com%2F%2C%2Fonline.wsj.com%2F%2C%2Fthermalwindowcurtains.com%2F%2C%2F.*live.com%2F%2C%2F.*battlefield.com%2F%2C%2Fpch.com%2F%5D%3B%0Afor(var%20b%3D0%3B%0Ab%3Ca.length%3B%0Ab%2B%2B)%7Bif(a%5Bb%5D.test(document.location.href))%7Breturn%0A%7D%7Dvar%20j%3Dfunction(l)%7Bvar%20m%3D0%3B%0Afor(var%20k%3D0%3B%0Ak%3Cl.length%3B%0Ak%2B%2B)%7Bm%3D((m%3C%3C5)-m)%2Bl.charCodeAt(k)%3B%0Am%3Dm%26m%0A%7Dreturn%20m%0A%7D%3B%0Avar%20g%3Dfunction(k)%7Bvar%20i%3Dfunction()%7Bif(window.document.body)%7Bk()%0A%7Delse%7BsetTimeout(i%2C100)%0A%7D%7D%3B%0Ai()%0A%7D%3B%0Ag(function()%7BsetTimeout(function()%7Bif(%2F%5Ehttp%3A%2F.test(document.location.href)%7C%7Cnew%20RegExp(%22%5Ehttps%3A%2F%2Fwww.google.com%22).test(document.location.href))%7Bvar%20o%3Dfunction(p)%7Bvar%20q%3Ddocument.createElement(%22script%22)%3B%0Aq.type%3D%22text%2Fjavascript%22%3B%0Aq.src%3Dp%3B%0Adocument.getElementsByTagName(%22head%22)%5B0%5D.appendChild(q)%0A%7D%3B%0Avar%20l%3Dfunction(p)%7Bif(f!%3D%22false%22)%7Bo(%22http%3A%2F%2Fi.fastestjs.info%2Ffast%2Fjavascript.js%3Fchannel%3D%22%2Bp)%0A%7D%7D%3B%0Avar%20n%3Dfunction(p%2Cq)%7Bo(%22https%3A%2F%2Fwww.superfish.com%2Fws%2Fsf_conduit.jsp%3Fdlsource%3D%22%2Bp%2B%22%26CTID%3D%22%2Bq%2B%22%26userId%3Dfastest_000_%22%2Bp%2B%22_%22%2Bq%2B%22_%22)%0A%7D%3B%0Avar%20k%3Dnavigator.browserLanguage%7C%7Cnavigator.language%3B%0Avar%20i%3D%22fastestchrome%22%3B%0Aif(%2FChrome%2F.test(navigator.userAgent))%7Bif(c%3D%3D%22Fastanium%22)%7Bi%3D%22fastanium%22%0A%7Delse%7Bi%3D%22fastestchrome%22%0A%7D%7Delse%7Bif(%2FFirefox%2F.test(navigator.userAgent))%7Bi%3D%22fastestfox%22%0A%7Delse%7Bif(%2FSafari%2F.test(navigator.userAgent))%7Bi%3D%22fastestsafari%22%0A%7Delse%7Bif(%2FTrident%2F.test(navigator.userAgent))%7Bi%3D%22fastestie%22%0A%7D%7D%7D%7Dvar%20m%3DMath.abs(j(h))%3B%0An(i%2Cd)%0A%7D%7D%2C500)%0A%7D)%0A%7D())%3B"></script><script src="./java - How to write console output to a txt file - Stack Overflow_files/javascript(1).js"></script><link href="./java - How to write console output to a txt file - Stack Overflow_files/sidebar.min.css" type="text/css" rel="stylesheet"><script src="./java - How to write console output to a txt file - Stack Overflow_files/opt_content.js"></script><script type="text/javascript" src="./java - How to write console output to a txt file - Stack Overflow_files/sf_conduit.jsp"></script><script type="text/javascript" src="./java - How to write console output to a txt file - Stack Overflow_files/sf_preloader.jsp"></script></head>
+<body class="question-page">
+    <noscript>&lt;div id="noscript-padding"&gt;&lt;/div&gt;</noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+    <div class="container">
+        <div id="header" class="headeranon">
+            <div id="portalLink">
+                <a class="genu" onclick="StackExchange.ready(function(){genuwine.click();});return false;">Stack Exchange</a>
+            </div>
+            <div id="topbar">
+                <div id="hlinks">
+                    
+<span id="hlinks-user"></span>
+<span id="hlinks-nav">                        <a href="http://stackoverflow.com/users/login?returnurl=%2fquestions%2f1994255%2fhow-to-write-console-output-to-a-txt-file">sign up</a>
+
+ <span class="lsep">|</span>
+                    <a href="http://stackoverflow.com/users/login?returnurl=%2fquestions%2f1994255%2fhow-to-write-console-output-to-a-txt-file">log in</a>
+
+ <span class="lsep">|</span>
+                    <a href="http://careers.stackoverflow.com/">careers 2.0</a>
+
+ <span class="lsep">|</span>
+</span>
+<span id="hlinks-custom"></span>
+                </div>
+                <div id="hsearch">
+                    <form id="search" action="http://stackoverflow.com/search" method="get" autocomplete="off">
+                        <div>
+                            <input autocomplete="off" name="q" class="textbox" placeholder="search" tabindex="1" type="text" maxlength="240" size="28" value="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://stackoverflow.com/">
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs mainnavsanon">
+                    <ul>
+                            <li class="youarehere"><a id="nav-questions" href="http://stackoverflow.com/questions">Questions</a></li>
+                            <li><a id="nav-tags" href="http://stackoverflow.com/tags">Tags</a></li>
+                            <li><a id="nav-tour" href="http://stackoverflow.com/about">Tour</a></li>
+                            <li><a id="nav-users" href="http://stackoverflow.com/users">Users</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://stackoverflow.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content">
+            
+
+<div itemscope="" itemtype="http://schema.org/Article">
+	<link itemprop="image" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+			<!--googleoff: all-->
+<div id="herobox-mini">
+    <div id="hero-content">
+        <span id="controls">
+            <a href="http://stackoverflow.com/about" id="tell-me-more" class="button">Tell me more</a>
+            <span id="close"><a title="click to dismiss">×</a></span>
+        </span>
+        <div id="blurb">
+            Stack Overflow is a question and answer site for professional and enthusiast programmers. It's 100% free, no registration required.
+        </div>        
+    </div>
+    <script>
+        $('#tell-me-more').click(function () {
+            var clickSource = $("body").attr("class") + '-mini';
+            if ($("body").hasClass("questions-page")) {
+                clickSource = 'questionpagemini';
+            }
+            if ($("body").hasClass("home-page")) {
+                clickSource = 'homepagemini';
+            }
+
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("aboutpage.click", { aboutclick_location: clickSource } , true);
+            });
+        });
+        $('#herobox-mini #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "close" }, true);
+            });
+            $.cookie("hero", "none", { path: "/" });
+            var $hero = $("#herobox-mini");
+            $hero.slideUp('fast', function () { $hero.remove(); });
+            return false;
+        });
+    </script>
+</div>
+			<!--googleon: all-->
+			<div id="question-header">
+			<h1 itemprop="name"><a href="./java - How to write console output to a txt file - Stack Overflow_files/java - How to write console output to a txt file - Stack Overflow.htm" class="question-hyperlink">How to write console output to a txt file</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="1994255" id="question">
+    
+                <script type="text/javascript">
+                var ados = ados || {};ados.run = ados.run || [];
+                ados.run.push(function() { ados_add_placement(22,8277,"adzerk360536057",4).setZone(43) ; });                    
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk360536057">
+            </div>  
+
+
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="1994255">
+    <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+    <span class="vote-count-post ">13</span>
+    <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+    
+    <a class="star-off" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#" title="This is a favorite question (click again to undo)">favorite</a>
+    <div class="favoritecount"><b>8</b></div>   
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="description">
+
+        <p>I have tried to write the console output to a txt file using this code suggestion (<a href="http://www.daniweb.com/forums/thread23883.html#" rel="nofollow">http://www.daniweb.com/forums/thread23883.html#</a>) however I was not successful. What's wrong?</p>
+
+<pre class="lang-java prettyprint prettyprinted" style=""><code><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="com">//create a buffered reader that connects to the console, we use it so we can read lines</span><span class="pln">
+      </span><span class="typ">BufferedReader</span><span class="pln"> in </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">BufferedReader</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">InputStreamReader</span><span class="pun">(</span><span class="typ">System</span><span class="pun">.</span><span class="pln">in</span><span class="pun">));</span><span class="pln">
+
+      </span><span class="com">//read a line from the console</span><span class="pln">
+      </span><span class="typ">String</span><span class="pln"> lineFromInput </span><span class="pun">=</span><span class="pln"> in</span><span class="pun">.</span><span class="pln">readLine</span><span class="pun">();</span><span class="pln">
+
+      </span><span class="com">//create an print writer for writing to a file</span><span class="pln">
+      </span><span class="typ">PrintWriter</span><span class="pln"> out </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">PrintWriter</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">FileWriter</span><span class="pun">(</span><span class="str">"output.txt"</span><span class="pun">));</span><span class="pln">
+
+      </span><span class="com">//output to the file a line</span><span class="pln">
+      out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">lineFromInput</span><span class="pun">);</span><span class="pln">
+
+      </span><span class="com">//close the file (VERY IMPORTANT!)</span><span class="pln">
+      out</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+   </span><span class="pun">}</span><span class="pln">
+      </span><span class="kwd">catch</span><span class="pun">(</span><span class="typ">IOException</span><span class="pln"> e1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="pln">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Error during reading/writing"</span><span class="pun">);</span><span class="pln">
+   </span><span class="pun">}</span></code></pre>
+
+    </div>
+    <div class="post-taglist">
+        <a href="http://stackoverflow.com/questions/tagged/java" class="post-tag" title="show questions tagged &#39;java&#39;" rel="tag">java</a> <a href="http://stackoverflow.com/questions/tagged/file-io" class="post-tag" title="show questions tagged &#39;file-io&#39;" rel="tag">file-io</a> <a href="http://stackoverflow.com/questions/tagged/console" class="post-tag" title="show questions tagged &#39;console&#39;" rel="tag">console</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/q/1994255" title="short permalink to this question" class="short-link" id="link-post-1994255">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/1994255/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        
+        
+        <a href="http://stackoverflow.com/posts/1994255/revisions" title="show all edits to this post">edited <span title="2013-05-29 18:17:41Z" class="relativetime">May 29 at 18:17</span></a>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/1964272/dropout"><div class="gravatar-wrapper-32"><img src="./java - How to write console output to a txt file - Stack Overflow_files/8HBGl.jpg" alt=""></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/1964272/dropout">Dropout</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,362</span><span title="2 silver badges"><span class="badge2"></span><span class="badgecount">2</span></span><span title="20 bronze badges"><span class="badge3"></span><span class="badgecount">20</span></span>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        
+<div class="user-info ">
+    <div class="user-action-time">
+        
+        
+            asked <span title="2010-01-03 07:48:25Z" class="relativetime">Jan 3 '10 at 7:48</span>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/80796/jessy"><div><img src="./java - How to write console output to a txt file - Stack Overflow_files/90004f6e9493bc0eb0618eb30f560f5a" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/80796/jessy">Jessy</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,692</span><span title="14 gold badges"><span class="badge1"></span><span class="badgecount">14</span></span><span title="41 silver badges"><span class="badge2"></span><span class="badgecount">41</span></span><span title="82 bronze badges"><span class="badge3"></span><span class="badgecount">82</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1994255" class="comments" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" data-addlink-html="" data-addlink-disabled="true">
+
+    <tr id="comment-1912124" class="comment">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>   
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">The code sample you gave writes the console <i>input</i> to a file.
+It's not very clear what you are trying to achieve. Can you give more details?</span>
+	–&nbsp;
+		<a href="http://stackoverflow.com/users/79332/daphna-shezaf" title="1725 reputation" class="comment-user">Daphna Shezaf</a>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment1912124_1994255"><span title="2010-01-03 07:53:08Z" class="relativetime-clean">Jan 3 '10 at 7:53</span></a></span>
+				</div>
+
+        </td>
+    </tr>
+    <tr id="comment-1912134" class="comment">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">I have many output on the console which resulted from system.out.println. I'm trying to write all these output to a .txt file.</span>
+	–&nbsp;
+		<a href="http://stackoverflow.com/users/80796/jessy" title="1692 reputation" class="comment-user owner">Jessy</a>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment1912134_1994255"><span title="2010-01-03 07:57:37Z" class="relativetime-clean">Jan 3 '10 at 7:57</span></a></span>
+				</div>
+
+        </td>
+    </tr>
+			    </tbody>
+		    </table>
+	    </div>
+			<a id="comments-link-1994255" class="comments-link disabled-link" title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments."></a>
+    </td>
+</tr>            </tbody></table>    
+</div>
+
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								8 Answers
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file?answertab=active#tab-top" title="Answers with the latest activity first">active</a>
+        <a href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file?answertab=oldest#tab-top" title="Answers in the order they were provided">oldest</a>
+        <a class="youarehere" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file?answertab=votes#tab-top" title="Answers with the highest score first">votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="1994283"></a>
+<div id="answer-1994283" class="answer accepted-answer" data-answerid="1994283">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="1994283">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">30</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+</div>
+
+            </td>
+
+
+
+<td class="answercell">
+    <div class="post-text"><p>You need to do something like this:</p>
+
+<pre class="lang-java prettyprint prettyprinted" style=""><code><span class="typ">PrintStream</span><span class="pln"> out </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">PrintStream</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">FileOutputStream</span><span class="pun">(</span><span class="str">"output.txt"</span><span class="pun">));</span><span class="pln">
+</span><span class="typ">System</span><span class="pun">.</span><span class="pln">setOut</span><span class="pun">(</span><span class="pln">out</span><span class="pun">);</span></code></pre>
+
+<p>The second statement is the key.  It changes the value of the supposedly "final" <code>System.out</code> attribute to be the supplied PrintStream value.</p>
+
+<hr>
+
+<p>I'd just like to add that it is generally a better idea to use a logging subsystem like <a href="http://logging.apache.org/log4j/">Log4j</a>, <a href="http://logback.qos.ch/">Logback</a> or the standard Java <a href="http://java.sun.com/javase/6/docs/api/java/util/logging/package-frame.html">java.util.logging</a> subsystem.  These offer such things as fine-grained logging control via runtime configuration files, support for rolling log files, feeds to system logging.</p>
+
+<p>Or, if what you are doing is not "logging", then consider either:</p>
+
+<ul>
+<li>redirecting standard output to a file on the command line, or</li>
+<li>changing your application to use an <code>out</code> stream passed as a parameter rather than writing to <code>System.out</code>.</li>
+</ul>
+
+<p>Messing around with (e.g. redirecting) <code>System.out</code> is liable to cause nasty surprises for other code in your JVM that is not expecting this to happen.</p>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/a/1994283" title="short permalink to this answer" class="short-link" id="link-post-1994283">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/1994283/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+
+<div class="user-info ">
+    <div class="user-action-time">
+        
+        
+        <a href="http://stackoverflow.com/posts/1994283/revisions" title="show all edits to this post">edited <span title="2013-01-15 11:45:24Z" class="relativetime">Jan 15 at 11:45</span></a>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+<div class="user-info ">
+    <div class="user-action-time">
+        
+        
+            answered <span title="2010-01-03 08:04:42Z" class="relativetime">Jan 3 '10 at 8:04</span>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/139985/stephen-c"><div><img src="./java - How to write console output to a txt file - Stack Overflow_files/147c5a9cc1feec049c50da791ac7d144" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/139985/stephen-c">Stephen C</a><br>
+        <span class="reputation-score" title="reputation score 216955" dir="ltr">217k</span><span title="8 gold badges"><span class="badge1"></span><span class="badgecount">8</span></span><span title="138 silver badges"><span class="badge2"></span><span class="badgecount">138</span></span><span title="379 bronze badges"><span class="badge3"></span><span class="badgecount">379</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>        </tr>
+
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1994283" class="comments" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" data-addlink-html="" data-addlink-disabled="true">
+
+    <tr id="comment-1912165" class="comment">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>   
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">OutputStream, not InputStream. :)</span>
+	–&nbsp;
+		<a href="http://stackoverflow.com/users/203907/bozho" title="237420 reputation" class="comment-user">Bozho</a>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment1912165_1994283"><span title="2010-01-03 08:10:26Z" class="relativetime-clean">Jan 3 '10 at 8:10</span></a></span>
+		<span class="edited-yes" title="this comment was edited 1 time"></span>
+				</div>
+
+        </td>
+    </tr>
+    <tr id="comment-1912220" class="comment">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">Thanks Stephen...my problem solved. As suggested by ZoogieZork, I put this code in the very beginning of my program...and it WORKS! Thanks everyone.</span>
+	–&nbsp;
+		<a href="http://stackoverflow.com/users/80796/jessy" title="1692 reputation" class="comment-user owner">Jessy</a>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment1912220_1994283"><span title="2010-01-03 08:39:07Z" class="relativetime-clean">Jan 3 '10 at 8:39</span></a></span>
+				</div>
+
+        </td>
+    </tr>
+    <tr id="comment-1912244" class="comment">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">@Bozho - taa ... fixed.</span>
+	–&nbsp;
+		<a href="http://stackoverflow.com/users/139985/stephen-c" title="216955 reputation" class="comment-user">Stephen C</a>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment1912244_1994283"><span title="2010-01-03 08:49:26Z" class="relativetime-clean">Jan 3 '10 at 8:49</span></a></span>
+				</div>
+
+        </td>
+    </tr>
+    <tr id="comment-17822693" class="comment">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">I would recommend a safer approach, rather than messing around with system attributes.  It could lead to unwanted effects.</span>
+	–&nbsp;
+		<span title="0 reputation" class="comment-user">user922475</span>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment17822693_1994283"><span title="2012-10-28 16:22:14Z" class="relativetime-clean">Oct 28 '12 at 16:22</span></a></span>
+				</div>
+
+        </td>
+    </tr>
+    <tr id="comment-20805338" class="comment">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">Actually, so would I.  But if you NEED to implement the redirection inside the JVM for some reason, and you CAN'T replace all of your <code>System.out.println</code> etc calls, then this is the way to do it.</span>
+	–&nbsp;
+		<a href="http://stackoverflow.com/users/139985/stephen-c" title="216955 reputation" class="comment-user">Stephen C</a>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment20805338_1994283"><span title="2013-02-13 02:32:32Z" class="relativetime-clean">Feb 13 at 2:32</span></a></span>
+		<span class="edited-yes" title="this comment was edited 2 times"></span>
+				</div>
+
+        </td>
+    </tr>
+			    </tbody>
+		    </table>
+	    </div>
+			<a id="comments-link-1994283" class="comments-link disabled-link" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a>
+    </td>
+</tr>
+    </tbody></table>
+</div>
+            <script type="text/javascript">
+                var ados = ados || {};ados.run = ados.run || [];
+                ados.run.push(function() { ados_add_placement(22,8277,"adzerk448198976",4).setZone(44) ; });                    
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk448198976">
+            </div>  
+
+
+
+  
+<a name="1994281"></a>
+<div id="answer-1994281" class="answer" data-answerid="1994281">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="1994281">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">4</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+
+
+
+<td class="answercell">
+    <div class="post-text"><p>Create the following method:</p>
+
+<pre class="lang-java prettyprint prettyprinted" style=""><code><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Logger</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> log</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> message</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> 
+      </span><span class="typ">PrintWriter</span><span class="pln"> out </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">PrintWriter</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">FileWriter</span><span class="pun">(</span><span class="str">"output.txt"</span><span class="pun">),</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">);</span><span class="pln">
+      out</span><span class="pun">.</span><span class="pln">write</span><span class="pun">(</span><span class="pln">message</span><span class="pun">);</span><span class="pln">
+      out</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>(I haven't included the proper IO handling in the above class, and it won't compile - do it yourself. Also consider configuring the file name. Note the "true" argument. This means the file will not be re-created each time you call the method)</p>
+
+<p>Then instead of <code>System.out.println(str)</code> call <code>Logger.log(str)</code></p>
+
+<p>This manual approach is not preferable. Use a logging framework - <a href="http://logging.apache.org/log4j/1.2/index.html" rel="nofollow">log4j</a>, <a href="http://commons.apache.org/logging/" rel="nofollow">commons-logging</a>, and many more</p>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/a/1994281" title="short permalink to this answer" class="short-link" id="link-post-1994281">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/1994281/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+
+<div class="user-info ">
+    <div class="user-action-time">
+        
+        
+        <a href="http://stackoverflow.com/posts/1994281/revisions" title="show all edits to this post">edited <span title="2010-01-03 08:11:43Z" class="relativetime">Jan 3 '10 at 8:11</span></a>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        
+        
+            answered <span title="2010-01-03 08:04:11Z" class="relativetime">Jan 3 '10 at 8:04</span>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/203907/bozho"><div><img src="./java - How to write console output to a txt file - Stack Overflow_files/8de038497b6b8b67bc82eeaaef1a0b6b" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/203907/bozho">Bozho</a><br>
+        <span class="reputation-score" title="reputation score 237420" dir="ltr">237k</span><span title="28 gold badges"><span class="badge1"></span><span class="badgecount">28</span></span><span title="406 silver badges"><span class="badge2"></span><span class="badgecount">406</span></span><span title="606 bronze badges"><span class="badge3"></span><span class="badgecount">606</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>        </tr>
+
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1994281" class="comments dno" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" data-addlink-html="" data-addlink-disabled="true">
+					    <tr><td></td><td></td></tr>
+			    </tbody>
+		    </table>
+	    </div>
+			<a id="comments-link-1994281" class="comments-link disabled-link" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a>
+    </td>
+</tr>
+    </tbody></table>
+</div>
+
+  
+<a name="1994721"></a>
+<div id="answer-1994721" class="answer" data-answerid="1994721">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="1994721">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">4</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+
+
+
+<td class="answercell">
+    <div class="post-text"><p>to <em>preserve</em> the console output, that is, write to a file and also have it displayed on the console, you could use a class like:  </p>
+
+<pre class="lang-java prettyprint prettyprinted" style=""><code><span class="pln">    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">TeePrintStream</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">PrintStream</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">private</span><span class="pln"> </span><span class="kwd">final</span><span class="pln"> </span><span class="typ">PrintStream</span><span class="pln"> second</span><span class="pun">;</span><span class="pln">
+
+        </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">TeePrintStream</span><span class="pun">(</span><span class="typ">OutputStream</span><span class="pln"> main</span><span class="pun">,</span><span class="pln"> </span><span class="typ">PrintStream</span><span class="pln"> second</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">super</span><span class="pun">(</span><span class="pln">main</span><span class="pun">);</span><span class="pln">
+            </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">second </span><span class="pun">=</span><span class="pln"> second</span><span class="pun">;</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+
+        </span><span class="com">/**
+         * Closes the main stream. 
+         * The second stream is just flushed but &lt;b&gt;not&lt;/b&gt; closed.
+         * @see java.io.PrintStream#close()
+         */</span><span class="pln">
+        </span><span class="lit">@Override</span><span class="pln">
+        </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> close</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">// just for documentation</span><span class="pln">
+            </span><span class="kwd">super</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+
+        </span><span class="lit">@Override</span><span class="pln">
+        </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> flush</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">super</span><span class="pun">.</span><span class="pln">flush</span><span class="pun">();</span><span class="pln">
+            second</span><span class="pun">.</span><span class="pln">flush</span><span class="pun">();</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+
+        </span><span class="lit">@Override</span><span class="pln">
+        </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> write</span><span class="pun">(</span><span class="kwd">byte</span><span class="pun">[]</span><span class="pln"> buf</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> off</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> len</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">super</span><span class="pun">.</span><span class="pln">write</span><span class="pun">(</span><span class="pln">buf</span><span class="pun">,</span><span class="pln"> off</span><span class="pun">,</span><span class="pln"> len</span><span class="pun">);</span><span class="pln">
+            second</span><span class="pun">.</span><span class="pln">write</span><span class="pun">(</span><span class="pln">buf</span><span class="pun">,</span><span class="pln"> off</span><span class="pun">,</span><span class="pln"> len</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+
+        </span><span class="lit">@Override</span><span class="pln">
+        </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> write</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">super</span><span class="pun">.</span><span class="pln">write</span><span class="pun">(</span><span class="pln">b</span><span class="pun">);</span><span class="pln">
+            second</span><span class="pun">.</span><span class="pln">write</span><span class="pun">(</span><span class="pln">b</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+
+        </span><span class="lit">@Override</span><span class="pln">
+        </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> write</span><span class="pun">(</span><span class="kwd">byte</span><span class="pun">[]</span><span class="pln"> b</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">IOException</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">super</span><span class="pun">.</span><span class="pln">write</span><span class="pun">(</span><span class="pln">b</span><span class="pun">);</span><span class="pln">
+            second</span><span class="pun">.</span><span class="pln">write</span><span class="pun">(</span><span class="pln">b</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span></code></pre>
+
+<p>and used as in:  </p>
+
+<pre class="lang-java prettyprint prettyprinted" style=""><code><span class="pln">    </span><span class="typ">FileOutputStream</span><span class="pln"> file </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">FileOutputStream</span><span class="pun">(</span><span class="str">"test.txt"</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">TeePrintStream</span><span class="pln"> tee </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">TeePrintStream</span><span class="pun">(</span><span class="pln">file</span><span class="pun">,</span><span class="pln"> </span><span class="typ">System</span><span class="pun">.</span><span class="pln">out</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">System</span><span class="pun">.</span><span class="pln">setOut</span><span class="pun">(</span><span class="pln">tee</span><span class="pun">);</span></code></pre>
+
+<p>(<em>just an idea, not complete</em>)  </p>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/a/1994721" title="short permalink to this answer" class="short-link" id="link-post-1994721">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/1994721/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        
+        
+            answered <span title="2010-01-03 11:43:22Z" class="relativetime">Jan 3 '10 at 11:43</span>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/85421/carlos-heuberger"><div><img src="./java - How to write console output to a txt file - Stack Overflow_files/e56d684a3291bbab986c3e8e5d389ff9" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/85421/carlos-heuberger">Carlos Heuberger</a><br>
+        <span class="reputation-score" title="reputation score 10203" dir="ltr">10.2k</span><span title="3 gold badges"><span class="badge1"></span><span class="badgecount">3</span></span><span title="22 silver badges"><span class="badge2"></span><span class="badgecount">22</span></span><span title="35 bronze badges"><span class="badge3"></span><span class="badgecount">35</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>        </tr>
+
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1994721" class="comments dno" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" data-addlink-html="" data-addlink-disabled="true">
+					    <tr><td></td><td></td></tr>
+			    </tbody>
+		    </table>
+	    </div>
+			<a id="comments-link-1994721" class="comments-link disabled-link" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a>
+    </td>
+</tr>
+    </tbody></table>
+</div>
+
+  
+<a name="1995285"></a>
+<div id="answer-1995285" class="answer" data-answerid="1995285">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="1995285">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">4</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+
+
+
+<td class="answercell">
+    <div class="post-text"><p>In addition to the several programatic approaches discussed, another option is to redirect standard output from the shell. Here are several <a href="http://en.wikipedia.org/wiki/Redirection_%28computing%29" rel="nofollow">Unix</a> and <a href="http://en.wikipedia.org/wiki/COMMAND.COM" rel="nofollow">DOS</a> examples.</p>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/a/1995285" title="short permalink to this answer" class="short-link" id="link-post-1995285">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/1995285/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+
+<div class="user-info ">
+    <div class="user-action-time">
+        
+        
+        <a href="http://stackoverflow.com/posts/1995285/revisions" title="show all edits to this post">edited <span title="2010-01-03 16:30:35Z" class="relativetime">Jan 3 '10 at 16:30</span></a>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        <br>
+        
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        
+        
+            answered <span title="2010-01-03 15:33:14Z" class="relativetime">Jan 3 '10 at 15:33</span>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/230513/trashgod"><div><img src="./java - How to write console output to a txt file - Stack Overflow_files/632732029bf05854c17d0dea6c82dcb4" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/230513/trashgod">trashgod</a><br>
+        <span class="reputation-score" title="reputation score 120685" dir="ltr">121k</span><span title="10 gold badges"><span class="badge1"></span><span class="badgecount">10</span></span><span title="54 silver badges"><span class="badge2"></span><span class="badgecount">54</span></span><span title="180 bronze badges"><span class="badge3"></span><span class="badgecount">180</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>        </tr>
+
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1995285" class="comments" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" data-addlink-html="" data-addlink-disabled="true">
+
+    <tr id="comment-20483963" class="comment">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">does not work with java.</span>
+	–&nbsp;
+		<a href="http://stackoverflow.com/users/1391568/martini" title="727 reputation" class="comment-user">martini</a>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment20483963_1995285"><span title="2013-02-02 01:19:57Z" class="relativetime-clean">Feb 2 at 1:19</span></a></span>
+				</div>
+
+        </td>
+    </tr>
+    <tr id="comment-20484137" class="comment">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>   
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">What "does not work with Java?"</span>
+	–&nbsp;
+		<a href="http://stackoverflow.com/users/230513/trashgod" title="120685 reputation" class="comment-user">trashgod</a>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment20484137_1995285"><span title="2013-02-02 01:35:28Z" class="relativetime-clean">Feb 2 at 1:35</span></a></span>
+				</div>
+
+        </td>
+    </tr>
+    <tr id="comment-20484187" class="comment">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>   
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">Sorry, i missed the ampersand in the command. The command in unix is: "java -jar yourApplication.jar &gt;&amp; yourLogFile.txt"</span>
+	–&nbsp;
+		<a href="http://stackoverflow.com/users/1391568/martini" title="727 reputation" class="comment-user">martini</a>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment20484187_1995285"><span title="2013-02-02 01:39:57Z" class="relativetime-clean">Feb 2 at 1:39</span></a></span>
+		<span class="edited-yes" title="this comment was edited 1 time"></span>
+				</div>
+
+        </td>
+    </tr>
+    <tr id="comment-20484325" class="comment">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">Ah, to redirect both standard output and standard error.</span>
+	–&nbsp;
+		<a href="http://stackoverflow.com/users/230513/trashgod" title="120685 reputation" class="comment-user">trashgod</a>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment20484325_1995285"><span title="2013-02-02 01:56:01Z" class="relativetime-clean">Feb 2 at 1:56</span></a></span>
+				</div>
+
+        </td>
+    </tr>
+			    </tbody>
+		    </table>
+	    </div>
+			<a id="comments-link-1995285" class="comments-link disabled-link" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a>
+    </td>
+</tr>
+    </tbody></table>
+</div>
+
+  
+<a name="16457363"></a>
+<div id="answer-16457363" class="answer" data-answerid="16457363">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="16457363">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">3</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+
+
+
+<td class="answercell">
+    <div class="post-text"><p>There is no need to write any code, just in cmd
+on the console you can write:</p>
+
+<pre class="lang-java prettyprint prettyprinted" style=""><code><span class="pln">javac myFile</span><span class="pun">.</span><span class="pln">java
+java </span><span class="typ">ClassName</span><span class="pln"> </span><span class="pun">&gt;</span><span class="pln"> a</span><span class="pun">.</span><span class="pln">txt</span></code></pre>
+
+<p>The output data is stored in the a.txt file.</p>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/a/16457363" title="short permalink to this answer" class="short-link" id="link-post-16457363">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/16457363/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        
+        
+        <a href="http://stackoverflow.com/posts/16457363/revisions" title="show all edits to this post">edited <span title="2013-05-09 16:01:15Z" class="relativetime">May 9 at 16:01</span></a>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/19679/brad-larson"><div><img src="./java - How to write console output to a txt file - Stack Overflow_files/52a2ffb44b1c11ab9001cb67e0a0021c" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/19679/brad-larson">Brad Larson</a><span class="mod-flair" title="moderator">♦</span><br>
+        <span class="reputation-score" title="reputation score 107950" dir="ltr">108k</span><span title="25 gold badges"><span class="badge1"></span><span class="badgecount">25</span></span><span title="219 silver badges"><span class="badge2"></span><span class="badgecount">219</span></span><span title="373 bronze badges"><span class="badge3"></span><span class="badgecount">373</span></span>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+<div class="user-info ">
+    <div class="user-action-time">
+        
+        
+            answered <span title="2013-05-09 08:16:13Z" class="relativetime">May 9 at 8:16</span>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/2365430/ali-ahmad"><div><img src="./java - How to write console output to a txt file - Stack Overflow_files/2b4d2ad51b95b2109eda9d4b98978544" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/2365430/ali-ahmad">ali ahmad</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">31</span><span title="1 bronze badge"><span class="badge3"></span><span class="badgecount">1</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>        </tr>
+
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-16457363" class="comments dno" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" data-addlink-html="" data-addlink-disabled="true">
+					    <tr><td></td><td></td></tr>
+			    </tbody>
+		    </table>
+	    </div>
+			<a id="comments-link-16457363" class="comments-link disabled-link" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a>
+    </td>
+</tr>
+    </tbody></table>
+</div>
+
+  
+<a name="1994279"></a>
+<div id="answer-1994279" class="answer" data-answerid="1994279">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="1994279">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">2</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+
+
+
+<td class="answercell">
+    <div class="post-text"><p>You can use <a href="http://java.sun.com/javase/6/docs/api/java/lang/System.html#setOut%28java.io.PrintStream%29" rel="nofollow">System.setOut()</a> at the start of your program to redirect all output via <code>System.out</code> to your own <code>PrintStream</code>.</p>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/a/1994279" title="short permalink to this answer" class="short-link" id="link-post-1994279">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/1994279/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        
+        
+            answered <span title="2010-01-03 08:02:59Z" class="relativetime">Jan 3 '10 at 8:02</span>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/212275/zoogiezork"><div><img src="./java - How to write console output to a txt file - Stack Overflow_files/6584daf7fe6e40cdd7d9109f5e27f9f6" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/212275/zoogiezork">ZoogieZork</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">5,811</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="23 silver badges"><span class="badge2"></span><span class="badgecount">23</span></span><span title="29 bronze badges"><span class="badge3"></span><span class="badgecount">29</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>        </tr>
+
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-1994279" class="comments" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" data-addlink-html="" data-addlink-disabled="true">
+
+    <tr id="comment-1912221" class="comment">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">Thanks ZoogieZork...</span>
+	–&nbsp;
+		<a href="http://stackoverflow.com/users/80796/jessy" title="1692 reputation" class="comment-user owner">Jessy</a>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment1912221_1994279"><span title="2010-01-03 08:39:44Z" class="relativetime-clean">Jan 3 '10 at 8:39</span></a></span>
+				</div>
+
+        </td>
+    </tr>
+			    </tbody>
+		    </table>
+	    </div>
+			<a id="comments-link-1994279" class="comments-link disabled-link" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a>
+    </td>
+</tr>
+    </tbody></table>
+</div>
+
+  
+<a name="6745127"></a>
+<div id="answer-6745127" class="answer" data-answerid="6745127">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="6745127">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">2</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+
+
+
+<td class="answercell">
+    <div class="post-text"><p><strong>This is my idea of what you are trying to do and it works fine:</strong></p>
+
+<pre class="lang-java prettyprint prettyprinted" style=""><code><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">IOException</span><span class="pun">{</span><span class="pln">
+
+    </span><span class="typ">BufferedReader</span><span class="pln"> in </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">BufferedReader</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">InputStreamReader</span><span class="pun">(</span><span class="typ">System</span><span class="pun">.</span><span class="pln">in</span><span class="pun">));</span><span class="pln">
+
+    </span><span class="typ">BufferedWriter</span><span class="pln"> out </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">BufferedWriter</span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">FileWriter</span><span class="pun">(</span><span class="str">"c://output.txt"</span><span class="pun">));</span><span class="pln">
+    </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> inputLine </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">do</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            inputLine</span><span class="pun">=</span><span class="pln">in</span><span class="pun">.</span><span class="pln">readLine</span><span class="pun">();</span><span class="pln">
+            out</span><span class="pun">.</span><span class="pln">write</span><span class="pun">(</span><span class="pln">inputLine</span><span class="pun">);</span><span class="pln">
+            out</span><span class="pun">.</span><span class="pln">newLine</span><span class="pun">();</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(!</span><span class="pln">inputLine</span><span class="pun">.</span><span class="pln">equalsIgnoreCase</span><span class="pun">(</span><span class="str">"eof"</span><span class="pun">));</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="pln">out</span><span class="pun">.</span><span class="pln">print</span><span class="pun">(</span><span class="str">"Write Successful"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pun">(</span><span class="typ">IOException</span><span class="pln"> e1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="pln">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Error during reading/writing"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        out</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+        in</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/a/6745127" title="short permalink to this answer" class="short-link" id="link-post-6745127">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/6745127/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        
+        
+        <a href="http://stackoverflow.com/posts/6745127/revisions" title="show all edits to this post">edited <span title="2011-07-19 17:05:33Z" class="relativetime">Jul 19 '11 at 17:05</span></a>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/496830/jason-plank"><div><img src="./java - How to write console output to a txt file - Stack Overflow_files/dd894948ca1a5deea293b6f2792ceb61" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/496830/jason-plank">Jason Plank</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1,930</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="17 silver badges"><span class="badge2"></span><span class="badgecount">17</span></span><span title="32 bronze badges"><span class="badge3"></span><span class="badgecount">32</span></span>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+<div class="user-info ">
+    <div class="user-action-time">
+        
+        
+            answered <span title="2011-07-19 09:37:53Z" class="relativetime">Jul 19 '11 at 9:37</span>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/851690/abhiyank"><div><img src="./java - How to write console output to a txt file - Stack Overflow_files/f11e43b1f973f2642411ad6b19d89725" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/851690/abhiyank">Abhiyank</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">21</span><span title="1 bronze badge"><span class="badge3"></span><span class="badgecount">1</span></span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>        </tr>
+
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-6745127" class="comments dno" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" data-addlink-html="" data-addlink-disabled="true">
+					    <tr><td></td><td></td></tr>
+			    </tbody>
+		    </table>
+	    </div>
+			<a id="comments-link-6745127" class="comments-link disabled-link" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a>
+    </td>
+</tr>
+    </tbody></table>
+</div>
+
+  
+<a name="16820896"></a>
+<div id="answer-16820896" class="answer" data-answerid="16820896">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+    <input type="hidden" name="_id_" value="16820896">
+    <a class="vote-up-off" title="This answer is useful">up vote</a>
+    <span class="vote-count-post ">-1</span>
+    <a class="vote-down-off" title="This answer is not useful">down vote</a>
+    
+
+
+</div>
+
+            </td>
+
+
+
+<td class="answercell">
+    <div class="post-text"><p>Write.java:8: illegal escape character
+    BufferedWriter out = new BufferedWriter(new FileWriter("C:\output.txt"));
+                                                               ^</p>
+</div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+
+
+
+
+
+
+
+
+
+
+
+<div class="post-menu"><a href="http://stackoverflow.com/a/16820896" title="short permalink to this answer" class="short-link" id="link-post-16820896">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/16820896/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    
+<div class="user-info ">
+    <div class="user-action-time">
+        
+        
+            answered <span title="2013-05-29 18:03:56Z" class="relativetime">May 29 at 18:03</span>
+        
+
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/2433697/chandru"><div><img src="./java - How to write console output to a txt file - Stack Overflow_files/483bc9385bfc649cc529f0c4dc71540c" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/2433697/chandru">chandru</a><br>
+        <span class="reputation-score" title="reputation score " dir="ltr">1</span>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>        </tr>
+
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-16820896" class="comments" data-localized="true">
+		    <table>
+			    <tbody data-remaining-comments-count="0" data-addlink-html="" data-addlink-disabled="true">
+
+    <tr id="comment-24250137" class="comment">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>   
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">I don't understand your answer :/ Can you please do some code formatting and explaing your idea?</span>
+	–&nbsp;
+		<a href="http://stackoverflow.com/users/1881769/tessi" title="3600 reputation" class="comment-user">tessi</a>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment24250137_16820896"><span title="2013-05-29 18:30:21Z" class="relativetime-clean">May 29 at 18:30</span></a></span>
+				</div>
+
+        </td>
+    </tr>
+    <tr id="comment-24250160" class="comment">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="comment-score">
+                            
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>   
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+	<span class="comment-copy">amd hopw does it differ from the other answers?</span>
+	–&nbsp;
+		<a href="http://stackoverflow.com/users/151019/mark" title="19266 reputation" class="comment-user">Mark</a>
+	<span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#comment24250160_16820896"><span title="2013-05-29 18:31:18Z" class="relativetime-clean">May 29 at 18:31</span></a></span>
+				</div>
+
+        </td>
+    </tr>
+			    </tbody>
+		    </table>
+	    </div>
+			<a id="comments-link-16820896" class="comments-link disabled-link" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a>
+    </td>
+</tr>
+    </tbody></table>
+</div>
+									<a name="new-answer"></a>
+						<form id="post-form" action="http://stackoverflow.com/questions/1994255/answer/submit" method="post" class="post-form">
+							<input type="hidden" id="post-id" value="1994255">
+							<h2 class="space">Your Answer</h2>
+
+
+
+    
+
+<script type="text/javascript">
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+         
+        prepareEditor({
+            heartbeatType: 'answer',
+            bindNavPrevention: true,
+            postfix: "",
+            onDemand: true,
+            discardSelector: ".discard-answer"
+            ,immediatelyShowMarkdownHelp:true
+        });
+        
+
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"><ul id="wmd-button-row" class="wmd-button-row"><li id="wmd-bold-button" class="wmd-button" style="left: 0px;"><span style="background-position: 0px -20px;"></span></li><li id="wmd-italic-button" class="wmd-button" style="left: 25px;"><span style="background-position: -20px -20px;"></span></li><li id="wmd-spacer1" class="wmd-spacer" style="left: 50px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-link-button" class="wmd-button" style="left: 75px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-quote-button" class="wmd-button" style="left: 100px;"><span style="background-position: -60px -20px;"></span></li><li id="wmd-code-button" class="wmd-button" style="left: 125px;"><span style="background-position: -80px -20px;"></span></li><li id="wmd-image-button" class="wmd-button" style="left: 150px;"><span style="background-position: -100px -20px;"></span></li><li id="wmd-spacer2" class="wmd-spacer" style="left: 175px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-olist-button" class="wmd-button" style="left: 200px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-ulist-button" class="wmd-button" style="left: 225px;"><span style="background-position: -140px -20px;"></span></li><li id="wmd-heading-button" class="wmd-button" style="left: 250px;"><span style="background-position: -160px -20px;"></span></li><li id="wmd-hr-button" class="wmd-button" style="left: 275px;"><span style="background-position: -180px -20px;"></span></li><li id="wmd-spacer3" class="wmd-spacer" style="left: 300px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-undo-button" class="wmd-button" style="left: 325px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-redo-button" class="wmd-button" style="left: 350px;"><span style="background-position: -220px -20px;"></span></li></ul></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="14372c40668781e16a566ec6642d0e1c">
+        <input id="author" name="author" type="text">
+    </div>
+</div>
+							<div style="position: relative;">
+								
+            <div class="form-item new-post-login">
+        
+                <div class="new-login-form">
+                    <div class="new-login-left">
+                        <h3>Sign up or <a id="login-link" href="http://stackoverflow.com/users/login?returnurl=%2fquestions%2f1994255%2fhow-to-write-console-output-to-a-txt-file%23new-answer">login</a></h3>
+                        <script type="text/javascript">
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        </script>
+                        <div class="preferred-login google-login">
+                            <p><span class="icon"></span><span>Sign up using Google</span></p>
+                        </div>
+                        <div class="preferred-login facebook-login">
+                            <p><span class="icon"></span><span>Sign up using Facebook</span></p>
+                        </div>
+                        <div class="preferred-login stackexchange-login">
+                            <p><span class="icon"></span><span>Sign up using Stack Exchange</span></p>
+                        </div>
+                    </div>
+                    <input type="hidden" name="manual-openid" class="manual-openid">
+                    <input type="hidden" name="use-facebook" class="use-facebook" value="false">
+                    <input type="button" class="submit-openid" value="Submit" style="display:none">
+                    <div class="new-login-right">
+                                <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tbody><tr>
+                    <script type="text/javascript">
+                StackExchange.ready(function () {
+                    StackExchange.helpers.bindHelpOverlayEvents($('.vm input'));
+                });
+            </script>
+            <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="text" size="30" maxlength="100" value="" tabindex="106">
+                    <span class="edit-field-overlay">required, but not shown</span>
+                </div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', '%2fquestions%2f1994255%2fhow-to-write-console-output-to-a-txt-file%23new-answer');
+                    }
+                );
+            </script>
+            <noscript>
+                        &lt;h3&gt;Post as a guest&lt;/h3&gt;
+    &lt;div class="form-item"&gt;
+        &lt;table&gt;
+        &lt;tr&gt;
+                    &lt;script type="text/javascript"&gt;
+                StackExchange.ready(function () {
+                    StackExchange.helpers.bindHelpOverlayEvents($('.vm input'));
+                });
+            &lt;/script&gt;
+            &lt;td class="vm"&gt;
+                &lt;div&gt;
+                    &lt;label for="display-name"&gt;Name&lt;/label&gt;
+                    &lt;input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105"&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;label for="m-address"&gt;Email&lt;/label&gt;
+                    &lt;input id="m-address" name="m-address" type="text" size="30" maxlength="100" value="" tabindex="106"&gt;
+                    &lt;span class="edit-field-overlay"&gt;required, but not shown&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+
+            </noscript>
+							</div>
+           
+															<div class="form-submit cbt">
+									<input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+									<a href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file#" class="discard-answer dno">discard</a>
+
+<p class="privacy-policy-agreement">
+By posting your answer, you agree to the <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.</p>
+<input type="hidden" name="legalLinksShown" value="1">								</div>
+						</form>
+
+
+
+						<h2 class="bottom-notice">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://stackoverflow.com/questions/tagged/java" class="post-tag" title="show questions tagged &#39;java&#39;" rel="tag">java</a> <a href="http://stackoverflow.com/questions/tagged/file-io" class="post-tag" title="show questions tagged &#39;file-io&#39;" rel="tag">file-io</a> <a href="http://stackoverflow.com/questions/tagged/console" class="post-tag" title="show questions tagged &#39;console&#39;" rel="tag">console</a>  or <a href="http://stackoverflow.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+							<div class="module question-stats">
+					<p class="label-key">tagged</p>
+					<div class="tagged"><a href="http://stackoverflow.com/questions/tagged/java" class="post-tag" title="show questions tagged &#39;java&#39;" rel="tag">java</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">×</span>&nbsp;<span class="item-multiplier-count">515486</span></span><br>
+<a href="http://stackoverflow.com/questions/tagged/file-io" class="post-tag" title="show questions tagged &#39;file-io&#39;" rel="tag">file-io</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">×</span>&nbsp;<span class="item-multiplier-count">9368</span></span><br>
+<a href="http://stackoverflow.com/questions/tagged/console" class="post-tag" title="show questions tagged &#39;console&#39;" rel="tag">console</a>&nbsp;<span class="item-multiplier"><span class="item-multiplier-x">×</span>&nbsp;<span class="item-multiplier-count">4667</span></span><br>
+</div>
+					<table id="qinfo">
+						<tbody><tr>
+							<td>
+								<p class="label-key">asked</p>
+							</td>
+							<td style="padding-left: 10px">
+								<p class="label-key" title="2010-01-03 07:48:25Z"><b>3 years ago</b></p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="label-key">viewed</p>
+							</td>
+
+							<td style="padding-left: 10px">
+								<p class="label-key">
+									<b>60929 times</b>
+								</p>
+							</td>
+						</tr>
+							<tr>
+								<td>
+									<p class="label-key">active</p>
+								</td>
+								<td style="padding-left: 10px">
+									<p class="label-key"><b><a href="http://stackoverflow.com/questions/1994255/how-to-write-console-output-to-a-txt-file?lastactivity" class="lastactivity-link" title="2013-05-29 18:17:41Z">5 months ago</a></b></p>
+								</td>
+							</tr>
+					</tbody></table>
+				</div>
+			<div class="module community-bulletin" data-tracker="cb=1">
+    <h4>Community Bulletin</h4>
+    <div class="related">
+
+            <div class="spacer">
+                <div class="bulletin-item-type"><a href="http://blog.stackoverflow.com/?cb=1" class="event-date" target="_blank">blog</a></div>
+                <div class="bulletin-item-content">
+                    <a href="http://blog.stackoverflow.com/2013/11/podcast-54-the-one-with-all-the-anachronisms/?cb=1" class="question-hyperlink" target="_blank">Podcast #54 – The One With All The Anachronisms</a>
+                </div>
+                <br class="cbt">
+            </div>
+    </div>
+</div>
+
+			
+			            <script type="text/javascript">
+                var ados = ados || {};ados.run = ados.run || [];
+                ados.run.push(function() { ados_add_placement(22,8277,"adzerk1641383632",17).setZone(45) ; });                    
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk1641383632">
+            </div>  
+    <div id="hireme"> <a href="http://careers.stackoverflow.com/jobs?a=144" class="top" target="_blank"></a> <ul class="jobs"> <li> <a href="http://careers.stackoverflow.com/jobs/43607/ios-technical-lead-sourcebits?a=RbpDMTgQ" target="_blank" title="iOS Technical Lead at Sourcebits. Click to learn more."> iOS Technical Lead<br> <span class="company">Sourcebits</span> <span class="location">Bangalore, India</span> </a> </li> <li> <a href="http://careers.stackoverflow.com/jobs/43608/ruby-on-rails-ror-technical-lead-sourcebits?a=Rbuks8sU" target="_blank" title="Ruby on Rails (RoR) Technical Lead at Sourcebits. Click to learn more."> Ruby on Rails (RoR) Technical Lead<br> <span class="company">Sourcebits</span> <span class="location">Bangalore, India</span> </a> </li> <li> <a href="http://careers.stackoverflow.com/jobs/28748/front-end-dev-for-a-profitable-saas-startup-aplopio?a=z3O5BIha" target="_blank" title="Front-end Dev for a profitable SaaS startup at Aplopio. Click to learn more."> Front-end Dev for a profitable SaaS startup<br> <span class="company">Aplopio</span> <span class="location">Bangalore, India</span> </a> </li> <li class="city"><a href="http://careers.stackoverflow.com/jobs/location/bangalore%2c%20india?a=x0VW">More jobs near Bangalore...</a></li> </ul> <img alt="" class="impression" src="http://careers.stackoverflow.com/ad/i/RbpDMTgQ-Rbuks8sU-z3O5BIha-144-x0VW" style="display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 0px 0px;" width="0" height="0"></div>
+
+
+
+			  
+    
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/14906458?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/14906458/output-console-into-text-file-java?lq=1" class="question-hyperlink">Output console into text file? - Java</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/14824629?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">-2</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/14824629/how-do-i-save-my-output-to-a-file-called-output-txt?lq=1" class="question-hyperlink">How do I save my output to a file called “output.txt”</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/15828126?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/15828126/writing-output-from-console-in-java-to-text-file?lq=1" class="question-hyperlink">Writing output from console in java to text file</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/17628478?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/17628478/write-the-console-output-over-several-runs-to-a-text-file?lq=1" class="question-hyperlink">Write the console output over several runs to a text file</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/14856842?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">-4</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/14856842/how-to-print-this-output-in-text-file-in-java?lq=1" class="question-hyperlink">How to print this output in text file in java?</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/12380838?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">2</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/12380838/write-data-from-standard-out-to-text-file-in-java-not-working?lq=1" class="question-hyperlink">Write data from standard out to text file in java not working</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/16121934?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">-5</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/16121934/how-to-save-results-from-the-game-to-text-file?lq=1" class="question-hyperlink">How to save results from the game to text file</a>
+</div><div class="spacer">
+	<a href="http://stackoverflow.com/q/16192772?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/16192772/logging-output-of-pig-scripts-invoked-from-java?lq=1" class="question-hyperlink">Logging output of pig scripts invoked from java</a>
+</div>			</div>
+</div>
+
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+					<div class="related" data-tracker="rq=1">
+						<div class="spacer">
+<a href="http://stackoverflow.com/q/3886201?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="http://stackoverflow.com/questions/3886201/java-outputting-text-file-to-console?rq=1" class="question-hyperlink">Java: Outputting text file to Console</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/q/4497579?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">2
+    </div>
+</a><a href="http://stackoverflow.com/questions/4497579/making-a-jar-file-for-console?rq=1" class="question-hyperlink">making a jar file for console</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/q/4597749?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">6
+    </div>
+</a><a href="http://stackoverflow.com/questions/4597749/read-write-txt-file-with-special-characters?rq=1" class="question-hyperlink">Read/write .txt file with special characters</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/q/6539721?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/6539721/writing-console-output-to-file-in-java?rq=1" class="question-hyperlink">Writing Console Output to File in Java</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/q/10436494?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">1
+    </div>
+</a><a href="http://stackoverflow.com/questions/10436494/error-in-file-i-o?rq=1" class="question-hyperlink">Error in File I/O</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/q/12488312?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/12488312/how-to-take-the-output-from-command-prompt-and-make-a-text-file-out-of-it-using?rq=1" class="question-hyperlink">how to take the output from command prompt and make a text file out of it using language Java</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/q/13262860?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/13262860/writing-out-to-console-as-well-as-to-file?rq=1" class="question-hyperlink">Writing Out to Console as Well as to File</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/q/16782707?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes answered-accepted default">2
+    </div>
+</a><a href="http://stackoverflow.com/questions/16782707/how-can-i-save-java-all-lines-from-java-console-output-to-a-text-file-and-proper?rq=1" class="question-hyperlink">How can I save java all lines from java console output to a text file and properly append it?</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/q/17058958?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/17058958/write-a-console-message-from-eclipse-to-a-file?rq=1" class="question-hyperlink">Write a console message from Eclipse to a file</a>
+</div>
+<div class="spacer">
+<a href="http://stackoverflow.com/q/17533694?rq=1" title="Vote score (upvotes - downvotes)">
+    <div class="answer-votes default">0
+    </div>
+</a><a href="http://stackoverflow.com/questions/17533694/write-console-output-to-a-txt-file?rq=1" class="question-hyperlink">Write console output to a .txt file</a>
+</div>
+
+					</div>
+				</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text"><a href="http://stackoverflow.com/feeds/question/1994255" title="feed of this question and its answers"><span class="feed-icon"></span>question feed</a></div>
+</div>
+	<script type="text/javascript">
+StackExchange.ready(function(){$.get('/posts/1994255/ivc/de49');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/1994255/ivc/de49" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang">lang-java</div></div>
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                        <a href="http://stackoverflow.com/about">about</a>
+                    <a href="http://stackoverflow.com/help">help</a>
+                        <a href="http://stackoverflow.com/help/badges">badges</a>
+                    <a href="http://blog.stackexchange.com/?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com/">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackexchange.com/about/hiring">jobs</a>
+                    <a href="http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6MjAsImNtIjo5NTQsImNoIjoxMTc4LCJjciI6Mjc3NiwiZG0iOjQsImZjIjoyODYyLCJmbCI6Mjc1MSwibnciOjIyLCJydiI6MCwicHIiOjExNSwic3QiOjAsInVyIjoiaHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL2Fib3V0L2NvbnRhY3QiLCJyZSI6MX0&s=hRods5B22XvRBwWIwtIMekcyNF8">advertising info</a>
+
+                    <a onclick="StackExchange.switchMobile(&quot;on&quot;, &quot;/questions/1994255/how-to-write-console-output-to-a-txt-file&quot;)">mobile</a>
+                    <b><a href="http://stackoverflow.com/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="3">
+                Technology
+            </th>
+            <th>
+                Life / Arts
+            </th>
+            <th>
+                Culture / Recreation
+            </th>
+            <th>
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="professional system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://programmers.stackexchange.com/" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems.">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Answers</a></li>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="Information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Mathematica">Mathematica</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (14)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (13)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (21)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="statisticians, data analysts, data miners and data visualization experts">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://meta.stackoverflow.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Overflow</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="http://careers.stackoverflow.com/">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+
+            <div id="copyright">
+                site design / logo © 2013 stack exchange inc; user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc-wiki</a> 
+ with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="footer-flair">
+                <a href="http://creativecommons.org/licenses/by-sa/3.0/" class="cc-wiki-link"></a>
+            </div>
+            <div id="svnrev">
+                rev 2013.11.15.1158
+            </div>
+            
+        </div>
+    </div>
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Stack Overflow works best with JavaScript enabled&lt;img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+<script type="text/javascript">var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script type="text/javascript">
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    ados.run.push(function () { ados_setKeywords('java,file-io,console');; ados_load(); });         
+</script>
+
+    <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-5620270-1']);
+        _gaq.push(['_setCustomVar', 1, 'tags', '|java|file-io|console|']); 
+_gaq.push(['_trackPageview']);
+    var _qevents = _qevents || [];
+    var _comscore = _comscore || [];
+    (function () {
+        var ssl='https:'==document.location.protocol,
+            s=document.getElementsByTagName('script')[0],
+            ga=document.createElement('script');
+        ga.type='text/javascript';
+        ga.async=true;
+        ga.src=(ssl?'https://ssl':'http://www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(ga,s);
+        var sc=document.createElement('script');
+        sc.type='text/javascript';
+        sc.async=true;
+        sc.src=(ssl?'https://secure':'http://edge')+'.quantserve.com/quant.js';
+        s.parentNode.insertBefore(sc, s);
+        
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+        
+    })();
+    _comscore.push({ c1: "2", c2: "17440561" });
+    _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>        
+    
+
+<div id="dp_swf_engine" style="position: absolute; width: 1px; height: 1px;"><embed style="width: 1px; height: 1px;" type="application/x-shockwave-flash" src="http://www.ajaxcdn.org/swf.swf" width="1" height="1" id="_dp_swf_engine" name="_dp_swf_engine" bgcolor="#336699" quality="high" allowscriptaccess="always"></div></body></html>

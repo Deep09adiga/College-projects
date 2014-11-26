@@ -1,0 +1,9 @@
+<style> 
+body
+{
+background:url("sports club.jpg");
+background-size:1367px 670px;
+background-repeat:no-repeat;
+padding-top:0px;
+}
+</style>

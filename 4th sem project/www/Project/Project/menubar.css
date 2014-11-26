@@ -1,0 +1,132 @@
+h1{
+	
+	font-weight: italic;
+	font-size: 40px;
+	text-shadow: 3px 2px 3px #333333;
+	
+	color:#0000FF;
+}
+
+body
+{
+  background: url("http://127.0.0.1/body.jpg");
+
+}
+
+#menu {
+    width: 1200px;
+    height: 45px;
+    margin-top: 50px;
+    margin-left: 25px;
+    background-position: center;
+    font-size: 22px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 2px 3px #333333;
+    background-color: #228B22;
+    background: url("http://127.0.0.1/lower.png");
+    border-radius: 10px;
+    
+       
+}
+#login {
+  background: gradient(top, #687587, #404853);
+  border: none;
+  text-align: center;
+  position: center;
+  outline-width: 250px;
+  color:#228B22;
+  font-weight: bold;
+  width:350px;
+  float: center;
+  
+  padding: 5px 10px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+}
+#menu ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+
+#menu li { 
+display: inline; 
+padding: 20px; 
+}
+
+
+#menu a {
+    text-decoration: none;
+    color: #E5E4E2;
+    padding: 8px 8px 8px 8px;
+}
+#menu a:hover {
+    color: #F90;
+    background-color:#ffffff;
+}
+
+
+
+form {
+  
+  
+  color: rgb(68, 68, 68);
+  border-radius: 7px;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  width: 800px;
+  height:1200px;
+  
+   font-size: 17px;
+   background: url("http://127.0.0.1/casingg1.png");
+
+}
+input {
+  
+  border: 3px solid #c6c9cc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 #fff;
+  color: #555222;
+  font: 20px 'Droid Sans', Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  margin: 0 0 20px 0;
+  padding: 5px;
+  width: 250px;
+
+}
+
+input:hover
+{
+  background: linear-gradient(top, #687587, #404853);
+}
+
+
+
+
+
+#adminloginimg
+{
+    float: center;
+    width:350px ;
+    height: 300px;
+    
+    
+    margin-left: 25px;
+}
+select
+{
+  background-position: right;
+  text-align: right;
+  font-size: 45px;
+}
+
+option
+{
+  width: 30px;
+  font-size: 15px;
+  font: 20px 'Droid Sans', Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  border-radius: 4px;
+  width: 250px;
+
+}

@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include "defs.h"
+main()
+{
+	int i, *p;
+	for(i=0;i<=4;i++)
+	printf("%d",a[i]);
+	printf("\n\n");
+	for(p=&a[0];p<=&a[4];p++)
+	printf("%d",*p);
+	printf("\n\n");
+	for(p=&a[0],i=1;i<=5;i++)
+	printf("%d",p[i]);
